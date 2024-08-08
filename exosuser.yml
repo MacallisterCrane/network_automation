@@ -1,0 +1,13 @@
+---
+- name: Create a new user on EXOS switch
+  hosts: exos
+  gather_facts: no
+  tasks:
+   - name: Add user
+     exos_config:
+      lines:
+       - create account admin "Local-Admin" WGU123
+     register: result
+   - name: verify creation
+     debug:
+      var: result   
