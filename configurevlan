@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-from netmiko mport ConnectHandler
+from netmiko import ConnectHandler
 from getpass import getpass
 if __name__ == "__main__":
 	device_dict = {
