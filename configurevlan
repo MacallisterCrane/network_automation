@@ -1,0 +1,20 @@
+#!/usr/bin/python3
+from netmiko mport ConnectHandler
+from getpass import getpass
+if __name__ == "__main__":
+	device_dict = {
+		"device_type" : "extreme_exos",
+		"host" : "10.10.1.24",
+		"username" : "admin",
+		"password" : getpass(),
+	}
+	netmiko_device = ConnectHandler(**device_dict)
+	print(netmiko_device.find_prompt())
+	print(
+		netmiko_device.send_command("create vlan localvlan tag 100")
+	)
+	print(dir(netmiko_device)
+	netmiko_device.disconnect()
+
+
+
