@@ -1,6 +1,3 @@
-#line 10 host can be replaced with other exos switch Ips
-#line 17 command can be replaced with different vlan names and tags for other switches
-
 #!/usr/bin/python3
 from netmiko mport ConnectHandler
 from getpass import getpass
