@@ -1,0 +1,15 @@
+[exos]
+10.10.1.30
+10.10.1.31
+10.10.1.32
+10.10.1.22
+
+[exos:vars]
+ansible_user=student
+anisble_password=password
+ansible_connection=network_cli
+ansible_network_os=exos
+ansible_become=yes
+ansible_become_method=enable
+ansible_become_password=password
+ansible_command_timeout=60
