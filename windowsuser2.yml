@@ -1,0 +1,12 @@
+---
+- name: user add
+  hosts: 10.10.1.36
+  tasks:
+   - name: create local user
+     ansible.windows.win_user:
+      name: "DesktopUser2"
+      password: "WGU123"
+      groups: "administrators"
+      update_password: on_create
+      password_expired: true
+
