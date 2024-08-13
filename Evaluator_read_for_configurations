@@ -1,2 +1,0 @@
-In the showvlan and configure vlan files the host address can be replaced with other exos switch Ips
-In the configurevlan file the netmiko command "configure vlan X tag X" can be replaced with different vlan names and tags for other switches
