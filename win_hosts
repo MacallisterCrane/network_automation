@@ -1,0 +1,12 @@
+windows:
+  hosts:  
+    10.10.1.35:
+    10.10.1.36:
+    10.10.1.43:
+    10.10.1.29:
+    10.10.1.28:
+  vars:
+    ansible_port: 5985
+    ansible_user: Administrator
+    ansible_password: P@ssw0rd
+    ansible_connection: winrm
