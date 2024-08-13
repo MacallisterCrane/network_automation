@@ -14,7 +14,7 @@ if __name__ == "__main__":
 	netmiko_device = ConnectHandler(**device_dict)
 	print(netmiko_device.find_prompt())
 	print(
-#Line 17 command can be replaced or expanded upon with any command for the device type 
+#Line 18 command can be replaced or expanded upon with any command for the device type 
 		netmiko_device.send_command("configure vlan localvlan tag 100")
 	)
 	print(dir(netmiko_device))
