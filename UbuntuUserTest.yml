@@ -1,0 +1,16 @@
+---
+- name: user add
+  hosts: 10.10.1.X
+  become: yes
+  become_user: root
+  vars:
+   usr_name: 'localhost'
+   usr_password: 'P@ssw0rd'
+   usr_groups: "Users"
+  tasks:
+   - name: create a new user
+     user:
+      name: "TestUserX"
+      groups: "sudo"
+      password: "WGU123"
+
