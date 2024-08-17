@@ -6,7 +6,7 @@ if __name__ == "__main__":
 	device_dict = {
 #device_type, IP, and username can be replaced with any type of device        
 		"device_type" : "extreme_exos",
-		"host" : "10.10.1.24",
+		"host" : "10.10.1.X",
 		"username" : "admin",
 		"password" : getpass(),
 	}
@@ -15,7 +15,7 @@ if __name__ == "__main__":
 	print(netmiko_device.find_prompt())
 	print(
 #Line 18 command can be replaced or expanded upon with any command for the device type 
-		netmiko_device.send_command("configure vlan localvlan tag 100")
+		netmiko_device.send_command("configure vlan <name> tag <#>")
 	)
 	print(dir(netmiko_device))
 	netmiko_device.disconnect()
